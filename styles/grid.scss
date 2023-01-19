@@ -1,0 +1,107 @@
+@import './variables.scss';
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-title {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container input, .form-container label {
+    margin: 5px 0;
+}
+
+.form-container input {
+    width: 50%;
+    height: 3rem;
+    padding: 10px;
+}
+
+.col {
+    flex-basis: 100%;
+}
+
+.col-1 {
+    flex-basis: 8.33%;
+}
+
+.col-2 {
+    flex-basis: 16.66%;
+}
+
+.col-3 {
+    flex-basis: 25%;
+}
+
+.col-4 {
+    flex-basis: 33.33%;
+}
+
+.header {
+    background-color: $accent-color;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.body {
+    background-color: $background-color;
+}
+
+.nav {
+    padding: 1rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav li {
+    margin: 0 15px;
+    flex-basis: auto;
+    margin: 0 15px;
+}
+
+.nav button {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 10px 20px;
+    border-color: $primary-color;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.nav button:hover {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: #fff;
+}
+
+.p {
+    color: $text-color;
+}
