@@ -8,21 +8,57 @@
 
 .form-title {
     text-align: center;
-    padding-bottom: 3rem;
+    padding: 1rem;
+    color: $secondary-color;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form-container input, .form-container label {
-    margin: 5px 0;
+.form-container label {
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .form-container input {
-    width: 50%;
-    height: 3rem;
+    margin: 5px 0;
+}
+
+.reservation-button {
+    margin-top: 0.5rem;
+    background-color: $secondary-color;
+    color: $primary-color;
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all .2s ease-in-out;
+    font-weight: 400;
+}
+
+.reservation-button::before {
+    content: '¡Reservar! ';
+}
+
+.reservation-button::after {
+    content: ' 😊';
+}
+
+.reservation-button:hover {
+    background-color: $primary-color;
+    border-color: $secondary-color;
+    color: $secondary-color;
+}
+
+.form-container input {
+    border-radius: 10px;
+    border: 2px solid $secondary-color;
+    width: 35%;
+    height: 2.5rem;
     padding: 10px;
 }
 
@@ -46,9 +82,6 @@
     flex-basis: 33.33%;
 }
 
-.header {
-    background-color: $accent-color;
-}
 
 .footer {
     display: flex;
@@ -56,17 +89,29 @@
     align-items: center;
 }
 
+.footer p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 550;
+}
 
 .body {
-    background-color: $background-color;
+    background: $primary-color;
 }
 
 .nav {
-    padding: 1rem;
-    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5.6rem;
+    background-color: $primary-color;
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba( $secondary-color, 0.1);
 }
 
 .nav ul {
@@ -74,34 +119,127 @@
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 .nav li {
     margin: 0 15px;
     flex-basis: auto;
-    margin: 0 15px;
 }
 
-.nav button {
-    background-color: $primary-color;
+.navbar-button {
+    margin: -0.5rem;
+    background-color: transparent;
     color: $secondary-color;
-    padding: 10px 20px;
-    border-color: $primary-color;
-    border-radius: 5px;
-    font-size: 12px;
+    padding: 0.5rem 1rem;
+    border-color: rgba($secondary-color, 0.7);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.75rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     text-decoration: none;
-    transition: all .2s ease-in-out;
+    transition: all .15s ease-in-out;
 }
+
 
 .nav button:hover {
     background-color: $secondary-color;
     border-color: $secondary-color;
-    color: #fff;
+    color: $primary-color;
 }
 
 .p {
-    color: $text-color;
+    color: $secondary-color;
+}
+
+.welcome-prompt {
+    text-align: center;
+    padding: 1rem;
+    color: $secondary-color;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.who-are-we-box-wrapper {
+    border-radius: 15px;
+    border: 1rem;
+    border-color: $primary-color;
+    width: 26rem;
+    height: 16rem;
+    background-color: $secondary-color;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.who-are-we-box {
+    border-radius: 10px;
+    border: 1rem;
+    border-color: $secondary-color;
+    width: 25rem;
+    height: 15rem;
+    background-color: $primary-color;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.who-are-we-box p {
+    text-align: justify;
+    margin: 0 20px;
+    padding: 2rem;
+    font-weight: 600;
+    color: $secondary-color;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2px;
+}
+
+.logo {
+    margin-left: 3rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.cards-container li {
+    list-style: none;    
+}
+
+.olla-card {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.card-title {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.card-text {
+    margin-top: 0.5rem;
+}
+
+.cards-section {
+    margin: 5rem 5rem;
+    display: flex;
+    align-items: center;
 }

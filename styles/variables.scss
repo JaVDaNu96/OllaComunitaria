@@ -1,9 +1,7 @@
 
 $max-width: 1100px;
 $border-radius: 12px;
-$font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+$font-mono: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 $foreground-rgb: 0, 0, 0;
 $background-start-rgb: 214, 219, 220;
@@ -38,8 +36,12 @@ $callout-rgb: 238, 240, 241;
 $callout-border-rgb: 172, 175, 176;
 $card-rgb: 180, 185, 188;
 $card-border-rgb: 131, 134, 135;
-$primary-color: #f4a261;
-$secondary-color: #264653;
-$accent-color: #e9c46a;
-$text-color: #333;
-$background-color: #FAFAFA;
+$primary-color: #ffffff;
+$secondary-color: #094349;
+$accent-color: #3f653e;
+$text-color: #d6dcd1;
+$background-color: linear-gradient(
+  20deg, 
+  #b4fdb0, 
+  #d6dcd1
+);

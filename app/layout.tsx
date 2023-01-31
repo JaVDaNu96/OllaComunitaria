@@ -1,5 +1,10 @@
 // import Navigation from './components/navigation';
 import '/styles/styles.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Navbar } from './components/navbar';
+
+
 export default function RootLayout({
   children,
 }: {
@@ -12,14 +17,7 @@ export default function RootLayout({
       </head>
       <body className='body'>
       <header className='header'>
-        <nav className='nav'>
-          <ul>
-            <li><button>HOME</button></li>
-            <li><button>MENU</button></li>
-            <li><button>RESERVATIONS</button></li>
-            <li><button>CONTACT</button></li>
-          </ul>
-        </nav>
+        <Navbar></Navbar>
       </header>
         {children}
       </body>
